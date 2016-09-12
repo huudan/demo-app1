@@ -3,6 +3,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = function() {
 	var config = {};
@@ -50,7 +51,12 @@ module.exports = function() {
 			inject: 'body'
 		}),
 		new webpack.optimize.DedupePlugin(),
-		new webpack.optimize.UglifyJsPlugin()
+		new webpack.optimize.UglifyJsPlugin(),
+		new CopyWebpackPlugin([
+			{
+				from: __dirname + '/src/public'
+			}
+		])
 	];
 
 	config.devServer = {
