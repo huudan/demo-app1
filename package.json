@@ -21,7 +21,7 @@
   "homepage": "https://github.com/huudan/demo-app1#readme",
   "dependencies": {
     "angular": "^1.5.8",
-    "demo-dep1": "git+https://github.com/huudan/demo-dep1.git",
+    "demo-dep1": "git+https://github.com/huudan/demo-dep1.git#1.0.1",
     "demo-dep2": "git+https://github.com/huudan/demo-dep2.git#1.0.2"
   },
   "devDependencies": {
