@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "webpack-dev-server --port 4000",
     "start": "npm run server",
-	"build": "rimraf dist && webpack --bail --progress --profile"
+    "build": "rimraf dist && webpack --bail --progress --profile"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "copy-webpack-plugin": "^3.0.1",
     "html-webpack-plugin": "^2.22.0",
     "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.4",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.1"
   }

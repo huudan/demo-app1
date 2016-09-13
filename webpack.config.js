@@ -50,7 +50,7 @@ module.exports = function() {
 			template: './src/public/index.html',
 			inject: 'body'
 		}),
-		new webpack.optimize.DedupePlugin(),
+		// new webpack.optimize.DedupePlugin(), // for prod only
 		new webpack.optimize.UglifyJsPlugin(),
 		new CopyWebpackPlugin([
 			{
